@@ -276,21 +276,17 @@
         </div>
       </div>
     </div>
+
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Function to detect if the user is on a desktop device
-            function isDesktop() {
-                return window.innerWidth >= 1024; // Assuming 1024px and above is considered desktop
-            }
-
-            // URL to redirect to if the user is on a desktop device
-            const desktopRedirectUrl = 'https://sobakintech.sytes.net/';
-
-            // Check if the user is on a desktop device and redirect if true
-            if (isDesktop()) {
-                window.location.href = desktopRedirectUrl;
-            }
-        });
+      document.addEventListener('DOMContentLoaded', function() {
+        function isDesktop() {
+          return window.innerWidth >= 1024;
+        }
+  
+      if (isDesktop()) {
+        window.location.href = '/';
+      }
+      });
     </script>
   </body>
 </html>
